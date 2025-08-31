@@ -56,7 +56,6 @@ the GitHub repository
 - **`main`** - Preview environment _(staging/preprod)_
 
   - Automatically deploys to preview URL:
-    [preprod.matedansleretro.fr/](http://preprod.matedansleretro.fr/) or
     [preview.matedansleretro.fr/](http://preview.matedansleretro.fr/)
   - Used for testing and review
 
@@ -143,10 +142,10 @@ python -m http.server 8000
 5. Check your changes in this dedicated environment
 6. Once tested and approved, merge your PR into `main` **(using squash commit)**
 7. Vercel automatically builds and deploys the `main` branch to
-   [the preprod environment](http://preprod.matedansleretro.fr/) on each push on
+   [the preprod environment](http://preview.matedansleretro.fr/) on each push on
    `main`
 8. For double safety, check your changes on
-   [the preprod](http://preprod.matedansleretro.fr/)
+   [the preprod](http://preview.matedansleretro.fr/)
 9. Once tested and approved, create a PR from `main` into `prod` and merge it
    **(using merge commit)**
 
@@ -170,9 +169,9 @@ If you know what you are doing, you can skip the whole "new branch and PR to
 
 1. Write your code and push it to directly to the `main` branch
 2. Vercel automatically builds and deploys the `main` branch to
-   [the preprod environment](http://preprod.matedansleretro.fr/) on each push on
+   [the preprod environment](http://preview.matedansleretro.fr/) on each push on
    `main`
-3. Check your changes on [the preprod](http://preprod.matedansleretro.fr/)
+3. Check your changes on [the preprod](http://preview.matedansleretro.fr/)
 4. Once tested and approved, create a PR from `main` into `prod` and merge it
    **(using merge commit)**
 
