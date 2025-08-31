@@ -1,72 +1,245 @@
 <!DOCTYPE html>
 <html lang="fr">
-  
-<head>
-  <title>Mate Dans Le Rétro... Gaming</title>
-  <meta name="description" content="Association de quarantenaires geeks nostalgiques 🎮 📺">
-  <meta name="author" content="Mate Dans Le Rétro">
-  
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="index, follow">
+  <head>
+    <title>Mate Dans Le Rétro... Gaming</title>
+    <meta
+      name="description"
+      content="Association de quarantenaires geeks nostalgiques 🎮 📺"
+    />
+    <meta name="author" content="Mate Dans Le Rétro" />
 
-  <meta property="og:title" content="Mate Dans Le Rétro... Gaming">
-  <meta property="og:description" content="Association de quarantenaires geeks nostalgiques 🎮 📺">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://matedansleretro.fr">
-  <meta property="og:image" content="https://matedansleretro.fr/images/logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="matedansleretro.fr">
-  <meta property="twitter:url" content="https://matedansleretro.fr">
-  <meta name="twitter:title" content="Mate Dans Le Rétro... Gaming">
-  <meta name="twitter:description" content="Association de quarantenaires geeks nostalgiques 🎮 📺">
-  <meta name="twitter:image" content="https://matedansleretro.fr/images/logo.png">
+    <meta property="og:title" content="Mate Dans Le Rétro... Gaming" />
+    <meta
+      property="og:description"
+      content="Association de quarantenaires geeks nostalgiques 🎮 📺"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://matedansleretro.fr" />
+    <meta
+      property="og:image"
+      content="https://matedansleretro.fr/images/logo.png"
+    />
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-512x512.png">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="matedansleretro.fr" />
+    <meta property="twitter:url" content="https://matedansleretro.fr" />
+    <meta name="twitter:title" content="Mate Dans Le Rétro... Gaming" />
+    <meta
+      name="twitter:description"
+      content="Association de quarantenaires geeks nostalgiques 🎮 📺"
+    />
+    <meta
+      name="twitter:image"
+      content="https://matedansleretro.fr/images/logo.png"
+    />
 
-  <!-- Manifest -->
-  <link rel="manifest" href="./site.webmanifest">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./android-chrome-512x512.png"
+    />
 
-  <!-- Windows Tiles -->
-  <meta name="msapplication-TileColor" content="#321a56">
+    <!-- Manifest -->
+    <link rel="manifest" href="./site.webmanifest" />
 
-  <!-- Theme color (for mobile browsers) -->
-  <meta name="theme-color" content="#321a56">
-  
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background: #321a56;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .logo-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      width: 100vw;
-    }
-    img {
-      max-width: 300px;
-      width: 80vw;
-      height: auto;
-    }
-  </style>
-</head>
-  
-<body>
-  <div class="logo-container">
-    <img src="./images/logo.png" alt="Mate Dans Le Rétro... Gaming">
-  </div>
-</body>
-  
+    <!-- Windows Tiles -->
+    <meta name="msapplication-TileColor" content="#321a56" />
+
+    <!-- Theme color (for mobile browsers) -->
+    <meta name="theme-color" content="#321a56" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body class="h-dvh bg-purple text-white">
+    <main class="size-full max-w-screen-xl mx-auto flex flex-col items-center">
+      <header
+        class="min-h-[500px] h-[500px] max-h-[500px] w-full bg-contain bg-center bg-no-repeat"
+      ></header>
+
+      <img
+        id="logo"
+        class="max-w-[224px] transform -translate-y-[58%] rotate-[-3deg]"
+        src="./images/logo.png"
+        alt="Mate Dans Le Rétro... Gaming"
+      />
+
+      <section class="bg-purple max-w-screen-lg -mt-24 text-center" id="intro">
+        <p>
+          Pour la deuxième année consécutive l’association Mate dans le Rétro...
+          Gaming organise son événement rétro gaming à
+          <a
+            href="https://lacaserne-sourcieux.fr/"
+            target="_blank"
+            rel="noopener"
+            >La Caserne</a
+          >
+          à Sourcieux-les-Mines.
+        </p>
+
+        <p>
+          Durant tout un week-end, venez jouer sur borne d’arcade ou sur plus
+          d’une vingtaine de consoles des années 80 à début 2000 en accès libre
+          et tenter, pourquoi pas, de remporter un de nos incroyables tournois !
+          <b
+            >Alors que vous soyez team Sega ou team Nintendo, un nostalgique de
+            l’atari 2600 ou un addict Playstation, on vous attend les 8 et 9
+            novembre 2025 !</b
+          >
+        </p>
+
+        <p class="text-pink">
+          <b>Encore un peu de patience le programme arrive bientôt !</b>
+        </p>
+      </section>
+
+      <section
+        class="relative bg-pink flex flex-col items-center gap-10"
+        id="details"
+      >
+        <h2>Les infos importantes à connaitre</h2>
+
+        <ul class="flex justify-evenly list-none w-full gap-2">
+          <li>
+            <h4>Les tarifs</h4>
+            <p>5€ l’entrée</p>
+            <p><i>(gratuit pour les - de 8 ans)</i></p>
+            <p>Pass week’end : 8 €</p>
+          </li>
+
+          <li>
+            <h4>Le lieu</h4>
+            <p>La Caserne<br />69210 - Sourcieux-les-Mines</p>
+            <p>
+              <a
+                href="https://www.google.fr/maps/place/La+Caserne+-+Tiers-lieu+et+caf%C3%A9+associatif+%C3%A0+Sourcieux-Les-Mines/@45.7988523,4.6226754,1062m/data=!3m2!1e3!4b1!4m6!3m5!1s0x47f4f3ac14899163:0x7d731bbbea927678!8m2!3d45.7988486!4d4.6252503!16s%2Fg%2F11ss18bh42?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                rel="noopener"
+                >Voir sur une carte</a
+              >
+            </p>
+          </li>
+
+          <li>
+            <h4>Le paiement</h4>
+            <p>Nous n’acceptons malheureusement pas les paiements en CB</p>
+            <p>Pensez à venir avec de l’espèce ou votre chéquier !</p>
+          </li>
+        </ul>
+
+        <div id="decorative-squares">
+          <div id="top-left-corner">
+            <div
+              class="decorative-square bg-pink absolute -top-6 left-32"
+            ></div>
+            <div
+              class="decorative-square bg-purple absolute top-2 left-6"
+            ></div>
+            <div
+              class="decorative-square bg-purple absolute top-3 left-18"
+            ></div>
+          </div>
+
+          <div id="top-right-corner">
+            <div
+              class="decorative-square bg-pink absolute -top-3 right-32"
+            ></div>
+            <div
+              class="decorative-square bg-pink absolute -top-8 right-18"
+            ></div>
+            <div
+              class="decorative-square bg-purple absolute top-3 right-6"
+            ></div>
+          </div>
+
+          <div id="bottom-left-corner">
+            <div
+              class="decorative-square bg-purple absolute bottom-3 left-8"
+            ></div>
+            <div
+              class="decorative-square bg-pink absolute -bottom-8 left-20"
+            ></div>
+            <div
+              class="decorative-square bg-purple absolute bottom-0 left-40"
+            ></div>
+          </div>
+
+          <div id="bottom-right-corner">
+            <div
+              class="decorative-square bg-purple absolute bottom-0 right-34"
+            ></div>
+            <div
+              class="decorative-square bg-pink absolute -bottom-9 right-28"
+            ></div>
+            <div
+              class="decorative-square bg-pink absolute -bottom-7 right-10"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-purple flex flex-col items-center mb-20" id="socials">
+        <p class="bold max-w-[428px] text-center">
+          Pour suivre notre actu et avoir toutes les dernières infos,
+          suivez-nous sur Instagram
+        </p>
+
+        <a
+          href="https://www.instagram.com/mate_dans_le_retro/"
+          target="_blank"
+          rel="noopener"
+        >
+          <img
+            src="https://static.cdnlogo.com/logos/i/92/instagram.svg"
+            class="w-14"
+          />
+        </a>
+      </section>
+
+      <section class="bg-pink min-h-[200px]" id="pictures">
+        <div class="flex justify-center gap-4 -mt-20">
+          <img src="./images/thumbnails/couch.png" />
+
+          <img src="./images/thumbnails/bongo.png" />
+
+          <img src="./images/thumbnails/couch_2.png" />
+          <img src="./images/thumbnails/team.png" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
