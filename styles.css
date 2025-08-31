@@ -1,0 +1,125 @@
+/* stylelint-disable unknownVendorSpecificProperties */
+
+body {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-feature-settings: 'liga' 1, 'kern' 1;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+h6 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.medium,
+.median,
+.semibold {
+  font-weight: 600;
+}
+
+b,
+.bold {
+  font-weight: 800;
+}
+
+.text-pink {
+  color: #ea4592;
+}
+.text-purple {
+  color: #331655;
+}
+
+.bg-pink {
+  background-color: #ea4592;
+  color: #ffffff;
+}
+.bg-purple {
+  background-color: #331655;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: underline;
+}
+
+main > section {
+  width: 100%;
+}
+
+section {
+  padding: 3rem 4rem;
+}
+
+section > p {
+  margin: 1.5rem 0;
+}
+
+.decorative-square {
+  width: 1rem;
+  height: 1rem;
+}
+
+#details ul li {
+  flex: 1;
+  max-width: 296px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#details ul li > :first-child {
+  color: #331655;
+  margin-bottom: 0.5rem;
+}
+#details ul li > p:first-of-type {
+  font-weight: 800;
+}
+#details ul li > p {
+  text-align: center;
+}
+
+#pictures img {
+  max-width: 210px;
+  border-radius: 1rem;
+}
