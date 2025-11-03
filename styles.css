@@ -89,6 +89,7 @@ main > section {
 
 section {
   padding: 3rem 4rem;
+  padding-bottom: 6rem;
 }
 
 section > p {
@@ -100,7 +101,15 @@ section > p {
   height: 1rem;
 }
 
-#details ul li {
+#agenda ul li > img,
+#tournaments ul li > img {
+  order: -1;
+  max-height: 147px;
+}
+
+#agenda ul li,
+#details ul li,
+#tournaments ul li {
   flex: 1;
   max-width: 296px;
 
@@ -108,15 +117,39 @@ section > p {
   flex-direction: column;
   align-items: center;
 }
+
+#agenda ul li > :first-child,
 #details ul li > :first-child {
   color: #331655;
+}
+
+#agenda ul li > :first-child,
+#details ul li > :first-child,
+#tournaments ul li > :first-child {
   margin-bottom: 0.5rem;
 }
+
+#agenda ul li > p,
+#details ul li > p,
+#tournaments ul li > p {
+  text-align: center;
+}
+
+#tournaments > p > a {
+  color: #ea4592;
+  font-weight: 600;
+}
+
+#tournaments ul li > :first-child {
+  color: #ea4592;
+}
+
+#tournaments ul li > p {
+  font-weight: 600;
+}
+
 #details ul li > p:first-of-type {
   font-weight: 800;
-}
-#details ul li > p {
-  text-align: center;
 }
 
 #pictures img {
