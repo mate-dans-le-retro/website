@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://matedansleretro.fr" />
     <meta
       property="og:image"
-      content="https://matedansleretro.fr/images/posters/2026_lighter.jpg"
+      content="https://matedansleretro.fr/images/bg_hero_2026.jpg"
     />
 
     <meta name="twitter:card" content="summary_large_image" />
@@ -33,7 +33,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://matedansleretro.fr/images/posters/2026_lighter.jpg"
+      content="https://matedansleretro.fr/images/bg_hero_2026.jpg"
     />
 
     <!-- Favicon -->
@@ -92,51 +92,58 @@
 
   <body class="h-dvh bg-purple text-white">
     <main class="size-full mx-auto flex flex-col items-center">
-      <header id="hero" class="relative w-full">
+      <header>
+        <img
+          class="lg:hidden h-auto w-full"
+          src="./images/bg_hero_mobile_2026.png"
+          width="1280"
+          height="1000"
+          alt="Week-end Rétro Gaming Volume III, les 7 et 8 novembre 2026 à La Caserne"
+        />
+
+        <img
+          class="hidden lg:block h-auto w-full"
+          src="./images/bg_hero_2026.jpg"
+          width="2055"
+          height="926"
+          alt="Week-end Rétro Gaming Volume III, les 7 et 8 novembre 2026 à La Caserne"
+        />
+
         <img
           id="logo"
+          class="max-w-1/2 md:max-w-1/3 lg:max-w-[224px] transform -translate-y-[45%] lg:-translate-y-[58%] rotate-[-3deg] mx-auto"
           src="./images/logo.png"
           alt="Mate Dans Le Rétro... Gaming"
         />
-
-        <p class="hero-kicker">Volume III · 7 &amp; 8 novembre 2026</p>
-
-        <div class="poster-stage">
-          <img
-            id="poster"
-            src="./images/posters/2026_lighter.jpg"
-            width="1080"
-            height="1527"
-            alt="Affiche Rétro Gaming Volume III, les 7 et 8 novembre 2026 à La Caserne"
-          />
-        </div>
-
-        <section id="intro">
-          <p>
-            Pour la troisième année consécutive, l’association Mate dans le
-            Rétro... Gaming organise son événement rétro gaming à
-            <a
-              href="https://lacaserne-sourcieux.fr/"
-              target="_blank"
-              rel="noopener"
-              >La Caserne</a
-            >
-            à Sourcieux-les-Mines.
-          </p>
-
-          <p>
-            Durant tout un week-end, venez jouer sur borne d’arcade ou sur plus
-            d’une vingtaine de consoles des années 80 à début 2000 en accès libre
-            et tenter, pourquoi pas, de remporter un de nos incroyables
-            tournois !
-            <b>
-              Alors que vous soyez team Sega ou team Nintendo, un nostalgique de
-              l’atari 2600 ou un addict Playstation, on vous attend les 7 et 8
-              novembre 2026 !
-            </b>
-          </p>
-        </section>
       </header>
+
+      <section
+        class="bg-purple max-w-screen-lg -mt-18 md:-mt-24 text-center"
+        id="intro"
+      >
+        <p>
+          Pour la troisième année consécutive, l’association Mate dans le
+          Rétro... Gaming organise son événement rétro gaming à
+          <a
+            href="https://lacaserne-sourcieux.fr/"
+            target="_blank"
+            rel="noopener"
+            >La Caserne</a
+          >
+          à Sourcieux-les-Mines.
+        </p>
+
+        <p>
+          Durant tout un week-end, venez jouer sur borne d’arcade ou sur plus
+          d’une vingtaine de consoles des années 80 à début 2000 en accès libre
+          et tenter, pourquoi pas, de remporter un de nos incroyables tournois !
+          <b>
+            Alors que vous soyez team Sega ou team Nintendo, un nostalgique de
+            l’atari 2600 ou un addict Playstation, on vous attend les 7 et 8
+            novembre 2026 !
+          </b>
+        </p>
+      </section>
 
       <section
         class="relative bg-pink flex flex-col items-center gap-10"
