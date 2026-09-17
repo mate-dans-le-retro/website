@@ -157,7 +157,94 @@ section > p {
   border-radius: 1rem;
 }
 
+/*
+  Small screens: clean gap under the hero (no half-overlap).
+  Large screens: intentional logo bridge into the banner bottom.
+*/
+#logo {
+  display: block;
+  position: relative;
+  z-index: 2;
+  width: min(42vw, 160px);
+  height: auto;
+  margin: 1.25rem auto -2.5rem;
+  transform: rotate(-3deg);
+}
+
+#intro {
+  margin-top: 0;
+  padding-top: 3.25rem;
+}
+
 #tournaments-soon {
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 480px) {
+  #logo {
+    width: min(36vw, 180px);
+    margin: 1.5rem auto -2.75rem;
+  }
+
+  #intro {
+    padding-top: 3.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #logo {
+    width: min(28vw, 200px);
+    margin: 1.75rem auto -3rem;
+  }
+
+  #intro {
+    padding-top: 3.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #logo {
+    width: 210px;
+    margin: 0 auto -3.5rem;
+    transform: rotate(-3deg) translateY(-22%);
+  }
+
+  #intro {
+    padding-top: 2.75rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #logo {
+    width: 220px;
+    transform: rotate(-3deg) translateY(-28%);
+  }
+}
+
+@media (min-width: 1440px) {
+  #logo {
+    width: 225px;
+    margin-bottom: -3.6rem;
+    transform: rotate(-3deg) translateY(-30%);
+  }
+
+  #intro {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  #logo {
+    width: 230px;
+    margin-bottom: -3.75rem;
+    transform: rotate(-3deg) translateY(-34%);
+  }
+}
+
+@media (min-width: 1920px) {
+  #logo {
+    width: 240px;
+    transform: rotate(-3deg) translateY(-38%);
+  }
 }
