@@ -89,11 +89,20 @@ main > section {
 
 section {
   padding: 3rem 4rem;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 
 section > p {
   margin: 1.5rem 0;
+}
+
+/* Avoid stacking paragraph margin with section padding when the p is last flow content. */
+section > p:last-of-type {
+  margin-bottom: 0;
+}
+
+#contact > p {
+  margin-bottom: 1.5rem;
 }
 
 .decorative-square {
@@ -150,6 +159,23 @@ section > p {
 
 #details ul li > p:first-of-type {
   font-weight: 800;
+}
+
+#partners a {
+  text-decoration: none;
+}
+
+#partners img {
+  display: block;
+  max-height: 5.5rem;
+  width: auto;
+  max-width: 12rem;
+  object-fit: contain;
+}
+
+/* Instagram block: keep a bit more purple under the icon (Figma). */
+#contact {
+  padding-bottom: 5.5rem;
 }
 
 #pictures img {
