@@ -173,6 +173,11 @@ section > p:last-of-type {
   object-fit: contain;
 }
 
+#partners img[src*='battle_kart'] {
+  max-height: 7rem;
+  max-width: 14rem;
+}
+
 /* Instagram block: keep a bit more purple under the icon (Figma). */
 #contact {
   padding-bottom: 5.5rem;
